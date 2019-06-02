@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/libs/three.js"></script>
+    <script src="js/FunctionalLib.js"></script>
+    <script src="js/Visualisation.js"></script>
+  </head>
+  <body style=" -webkit-user-select: none;">
+    <div style="-webkit-app-region: drag; width:100%; height:100px; background:black; "></div>
+    <h1>Hello World!</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+    <audio controls src="media/2.mp3"  oncanplay="audioSetup(this,'visualization')" controls="false" style="visibility:none;"></audio>
+    <div id="visualization"></div>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>

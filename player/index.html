@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- <script data-main="app.js" src="bower_components/requirejs/require.js"></script> -->
+        <link rel="stylesheet" href='./js/libs/jqueryUI/jquery-ui.css'>
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" >
+    </head>
+    <body>
+      <div id="background-layer" class='background'>
+        <div id='canvasContainer'></div>
+      </div>
+      <div id="foregrround-layer" class='foreground'>
+        testing
+        <div id="progressbar"></div>
+      </div>
+    </body>
+
+    <script>
+    let $ = jQuery = require('./js/libs/jquery-3.1.1.js');
+    require('./js/libs/jqueryUI/jquery-ui.js');
+    require('../bower_components/bootstrap/dist/js/bootstrap.js')
+    require('./app.js');
+    </script>
+</html>

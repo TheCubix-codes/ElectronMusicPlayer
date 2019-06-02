@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Game Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href='./js/libs/jqueryUI/jquery-ui.css'>
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" >
+    </head>
+    <body>
+      <div id="background-layer" class='background'>
+        <div id='canvasContainer'></div>
+      </div>
+      <div id="foregrround-layer" class='foreground wrapper'>
+          <div id="artwork" class="artwork-grid-area artwork-default"></div>
+          <div id="metadata" class="metadata-grid-area metadata-default">
+            <div id="controls">
+              <button  id="prev-button" >Prev</button>
+              <button  id="play-pause-button" >Play</button>
+              <button  id="play-pause-button1" >Pause</button>
+              <button  id="next-button" >Next</button>
+            </div>
+          </div>
+          <div id="progressbar-container" class="progressbar-grid-area progressbar-default">
+            <div id="progressbar"></div>
+          </div>
+          <div id="playlist" class="playlist-grid-area playlist-default"></div>
+          <div id="extra-info" class="bottom-extra-info-grid-area bottom-extra-info-default"></div>
+      </div>
+    </body>
+
+    <script>
+    let $ = jQuery = require('./js/libs/jquery-3.1.1.js');
+    require('./js/libs/jqueryUI/jquery-ui.js');
+    require('../bower_components/bootstrap/dist/js/bootstrap.js')
+    require('./app.js');
+    </script>
+</html>
